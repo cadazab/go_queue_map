@@ -1,0 +1,17 @@
+html, body, #root {
+  height: 100%;
+}
+
+.headerMenu {
+  width: 400px;
+  margin-top: 10px;
+}
+
+.load {
+  text-align: center;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 30px 50px;
+  margin: 20px 0;
+  background: rgba(0,0,0,0.05)
+}

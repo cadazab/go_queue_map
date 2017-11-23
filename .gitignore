@@ -1,0 +1,11 @@
+#Hiden Files
+.*
+
+#Node Modules
+node_modules/
+
+#Authentication
+Server/authentication.js
+
+#But Not
+!.gitignore
