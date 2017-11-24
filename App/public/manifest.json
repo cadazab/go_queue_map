@@ -1,13 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
-  "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    }
-  ],
+  "short_name": "Go Queue Map",
+  "name": "178d3acfc5adabb2bd990d174f6749fa12bd9ad9",
   "start_url": "./index.html",
   "display": "standalone",
   "theme_color": "#000000",
