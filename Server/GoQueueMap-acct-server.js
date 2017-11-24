@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 
 var authenticationAcct = authentication.Acct
 
-app.use(function(req, res, next) {c
+app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   next();
