@@ -4,6 +4,7 @@ var app = express();
 var sql = require('mssql')
 var https = require('https');
 var bodyParser = require('body-parser');
+var authentication = require('./authentication')
 
 app.use(bodyParser.urlencoded({
     extended:true
@@ -11,12 +12,7 @@ app.use(bodyParser.urlencoded({
 
 app.use(bodyParser.json());
 
-var authenticationAcct = {
-    user: 'ibs_sup',
-    password: 'pantaitw',
-    server: 'pant-sql-dev\\acct', // You can use 'localhost\\instance' to connect to named instance
-    database: 'pantaenius'
-}
+var authenticationAcct = authentication.Acct
 
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
@@ -41,7 +37,7 @@ function callDatabase(quer, cb){
 
 }
 
-sql.connect(authenticationAcct);
+sql.connect(authenticationAcct)
 
 app.get('/getMappingOptions', (req,res)=>{
   callDatabase(`SELECT Mapping_Nr, Mapping
@@ -256,6 +252,6 @@ function(req, res){
 
 
 
-app.listen(3008, function(){
-	console.log('Example app listening on port 3008')
+app.listen(4001, function(){
+	console.log('Example app listening on port 4001')
 })

@@ -4,6 +4,7 @@ var app = express();
 var sql = require('mssql')
 var https = require('https');
 var bodyParser = require('body-parser');
+var authentication = require('./authentication')
 
 app.use(bodyParser.urlencoded({
     extended:true
@@ -13,12 +14,8 @@ app.use(bodyParser.json());
 
 //Set Acct, Test or Prod
 
-var authenticationTest = {
-    user: 'ibs_sup',
-    password: 'pantaitw',
-    server: 'pant-sql-dev\\test', // You can use 'localhost\\instance' to connect to named instance
-    database: 'pantaenius'
-}
+var authenticationTest = authentication.Test
+console.log(authenticationTest)
 
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
@@ -253,6 +250,6 @@ function(req, res){
 
 
 
-app.listen(3007, function(){
-	console.log('Example app listening on port 3007')
+app.listen(4000, function(){
+	console.log('Example app listening on port 4000')
 })

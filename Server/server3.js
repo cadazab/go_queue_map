@@ -4,6 +4,7 @@ var app = express();
 var sql = require('mssql')
 var https = require('https');
 var bodyParser = require('body-parser');
+var authentication = require('./authentication')
 
 app.use(bodyParser.urlencoded({
     extended:true
@@ -13,12 +14,7 @@ app.use(bodyParser.json());
 
 //Set Acct, Test or Prod
 
-var authenticationProd = {
-    user: 'ibs_sup',
-    password: 'pantaitw',
-    server: 'pant-sql\\ibs', // You can use 'localhost\\instance' to connect to named instance
-    database: 'pantaenius'
-}
+var authenticationProd = authentication.Prod
 
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");

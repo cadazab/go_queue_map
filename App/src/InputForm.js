@@ -52,9 +52,9 @@ class InputForm extends React.Component {
             defaultValue="test"
             onChange={this.props.handleEnviromentChange}
           >
-            <Option value="3007">Test</Option>
-            <Option value="3008">Acceptance</Option>
-            {/*<Option value="3009">Production</Option> */}
+            <Option value="4000">Test</Option>
+            <Option value="4001">Acceptance</Option>
+            {/*<Option value="4002">Production</Option> */}
           </Select>
         </FormItem>
 

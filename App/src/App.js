@@ -29,7 +29,7 @@ class App extends React.Component {
       ibsFilter: 'empty',
       orderBy: 'Outputfield',
       ascOrDesc: 'asc',
-      port: '3007',
+      port: '4000',
       mappingOptions: null,
       mapping: null
     }

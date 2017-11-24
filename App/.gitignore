@@ -9,6 +9,9 @@
 # production
 #/build
 
+# Client
+/src/Client.js
+
 # misc
 .DS_Store
 .env.local
