@@ -15,7 +15,6 @@ app.use(bodyParser.json());
 //Set Acct, Test or Prod
 
 var authenticationTest = authentication.Test
-console.log(authenticationTest)
 
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
