@@ -1,5 +1,15 @@
 # Go Queue Map
 
+- [Components](#components)
+  * [App](#app)
+- [Workflow](#workflow)
+  * [Production](#production)
+    + [Compile](#compile)
+    + [Deploy](#deploy)
+      - [The copy-paste way](#the-copy-paste-way)
+      - [The Git way](#the-git-way)
+- [Restarting the service](#restarting-the-service)
+
 ## Components
 
 The application is divided in two components, a backend **server** and a frontend React **app**.
