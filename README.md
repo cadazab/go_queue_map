@@ -4,7 +4,7 @@
 
 The application is divided in two components, a backend **server** and a frontend React **app**.
 
-###Server
+### Server
 
 The server in charge of providing information to the interface is  developed with [nodeJS](https://nodejs.org/en/), hence written on JavaScript, it uses the web framework [Express](https://expressjs.com/) to manage the http requests and the [mssql](https://github.com/tediousjs/node-mssql) library to connect to our database.
 
