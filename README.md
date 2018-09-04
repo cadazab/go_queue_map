@@ -121,6 +121,18 @@ you will need your GitHub account credentials.
 
 3. Restart the service
 
+## Starting the service
+
+Go to the **SVN Server** onto the directory /root/TablesMerge/Server/ and execute for example to start the test server:  
+
+```
+pm2 start GoQueueMap-test-server.js
+```
+
+you will need to restart the services **GoQueueMap-prod-server** and **GoQueueMapApp**.
+
+you can find more information of **PM2** here: [PM2](http://pm2.keymetrics.io/docs/usage/quick-start/)
+
 ## Restarting the service
 
 Go to the **SVN Server** and execute: 
