@@ -21,7 +21,7 @@ The server in charge of providing information to the interface is  developed wit
 Location:
 
 ```bash
-/root/TablesMerge/App/GoQueueMap-prod-server.js
+/root/TablesMerge/Server/GoQueueMap-prod-server.js
 ```
 
 
