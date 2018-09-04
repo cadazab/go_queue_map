@@ -42,6 +42,8 @@ Location:
 
 ![](https://github.com/cadazab/go_queue_map/blob/master/goqueuemap.png)
 
+![](https://github.com/cadazab/go_queue_map/blob/master/goqueuemap_20180904.jpg)
+
 ### Development !Is not existing anymmore
 
 The development stage takes place in the ubuntu server  **192.168.101.220:3000**, the project location is:
